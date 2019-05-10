@@ -16,8 +16,22 @@ class FizzBuzzerTest {
 
     @Test
     public void testIntReturn() {
-        int expected = 7;
+        String expected = "7";
 
-        assertEquals(expected, fizzBuzzer.fizzBuzz(7));
+        assertEquals(expected, fizzBuzzer.fizzBuzz("7"));
+    }
+
+    @Test
+    public void testIfDivisorBy3ReturnsFizz() {
+        String expected = "Fizz";
+
+        assertEquals(expected, fizzBuzzer.fizzBuzz("6"));
+    }
+
+    @Test
+    public void testIfDivisorBy5And3ReturnsFizzBuzz() {
+        String expected = "FizzBuzz";
+
+        assertEquals(expected, fizzBuzzer.fizzBuzz("15"));
     }
 }
