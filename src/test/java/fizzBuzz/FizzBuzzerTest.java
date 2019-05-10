@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class FizzBuzzerTest {
 
-    FizzBuzzer fizzBuzzer;
+    private FizzBuzzer fizzBuzzer;
 
     @BeforeEach
     public void createInstance() {
